@@ -1,0 +1,142 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+#sidebar {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: white;
+    left: -200px;
+    transition: all 500ms linear;
+    cursor: pointer;
+}
+
+#sidebar.active {
+    left: 0px;
+}
+
+#sidebar ul li {
+    color: black;
+    padding: 15px 10px;
+    border-block-end-style: ridge;
+}
+
+div ul li:hover {
+    background-color: rgb(253, 93, 147);
+}
+
+#sidebar .toggle-btn {
+    position: absolute;
+    left: 230px;
+    top: 20px;
+}
+
+#sidebar .toggle-btn span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: black;
+    margin: 3px 0px;
+}
+
+.bar {
+    width: 1000px;
+    height: 120px;
+}
+
+#img {
+    float: right;
+    margin-right: 990px;
+    margin-bottom: 50px;
+}
+
+.corps {
+    background-image: url(image/xw.jpg);
+    width: 950px;
+    height: 460px;
+    margin-left: 350px;
+    -webkit-animation-name: diapo;
+    -webkit-animation-duration: 20s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -moz-animation-name: diapo;
+    -moz-animation-duration: 20s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: normal;
+    animation-name: diapo;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@-webkit-keyframes diapo {
+    0% {
+        background-image: url(image/cas.jpg);
+    }
+    33% {
+        background-image: url(image/ch.jpg);
+    }
+    66% {
+        background-image: url(image/sac.jpg);
+    }
+}
+
+@-moz-keyframes diapo {
+    0% {
+        background-image: url(image/cas.jpg);
+    }
+    33% {
+        background-image: url(image/ch.jpg);
+    }
+    66% {
+        background-image: url(image/sac.jpg);
+    }
+}
+
+@keyframes diapo {
+    0% {
+        background-image: url(image/cas.jpg);
+    }
+    33% {
+        background-image: url(image/ch.jpg);
+    }
+    66% {
+        background-image: url(image/sac.jpg);
+    }
+}
+
+#contact {
+    margin-left: 1000px;
+    margin-top: 0px;
+    width: 30%;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+#shop {
+    width: 70%;
+}
+
+h1 {
+    margin-left: 30px;
+    width: 150px;
+    height: 50px;
+}
+
+.footer {
+    background-color: rgb(253, 93, 147);
+    width: 100%;
+    height: 55px;
+    margin-top: 02px;
+}
